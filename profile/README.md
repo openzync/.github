@@ -57,7 +57,7 @@ OpenZync components are available under different licenses:
 - **Frontend, landing** — **MIT**: permissive.
 - **Documentation** — **CC BY 4.0**: attribution required.
 
-A **commercial license** is available from Rohan Shaw for SaaS deployments that require AGPL exceptions.
+A **commercial license** is available from Rohan Shaw and Nikita Prasad for SaaS deployments that require AGPL exceptions.
 
 ## Authors
 
