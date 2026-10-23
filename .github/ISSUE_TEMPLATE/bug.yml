@@ -1,0 +1,59 @@
+name: Bug report
+description: Something behaves incorrectly in an OpenZync component.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security issues do not belong here. See the [security policy](https://github.com/openzync/.github/blob/main/SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Release tag, image tag, commit SHA, or `pip show openzync` output.
+      placeholder: 1.0.0 (or the image tag, commit SHA, or PyPI version)
+    validations:
+      required: true
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment
+      options:
+        - Docker Compose
+        - Kubernetes (Helm)
+        - Local development
+        - Hosted app (app.openzync.tech)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands or UI actions, starting from a known state.
+      placeholder: |
+        1. Start the stack with ...
+        2. Call POST /v1/...
+        3. See the error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant output with API keys, tokens, and personal data removed.
+      render: shell
+    validations:
+      required: false

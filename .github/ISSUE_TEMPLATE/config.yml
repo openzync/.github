@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://docs.openzync.tech/en/latest/
+    about: Installation, deployment, and API reference.
+  - name: Security vulnerability
+    url: https://github.com/openzync/.github/blob/main/SECURITY.md
+    about: Report privately by email, never in a public issue.
+  - name: Contributing guide
+    url: https://github.com/openzync/.github/blob/main/CONTRIBUTING.md
+    about: Repository setup, commit conventions, and pull request expectations.
